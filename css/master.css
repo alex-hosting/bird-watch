@@ -40,6 +40,10 @@ strong, .bt {
   width: 10vw;
 }
 
+#playBtn {
+  margin-bottom: 10px;
+}
+
 .green {
   color: #80ff86;
 }
@@ -295,6 +299,9 @@ strong, .bt {
 
 @media only screen and (max-width: 650px) {
   /* phone */
+  body {
+    width: 100%;
+  }
   #bird {
     left: 20%;
   }
@@ -309,6 +316,9 @@ strong, .bt {
   }
   .viewfinder {
     margin-top: 20vh;
+  }
+  .alert {
+    font-size: 12px;
   }
   #birdInfo {
     margin-top: 2vh;
