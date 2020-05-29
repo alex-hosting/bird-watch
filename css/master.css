@@ -72,7 +72,7 @@ strong, .bt {
   left: 0;
   right: 0;
   bottom: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   touch-action: manipulation;
 }
 
@@ -91,7 +91,7 @@ strong, .bt {
 }
 
 .container {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   touch-action: manipulation;
 }
 
@@ -99,7 +99,7 @@ strong, .bt {
   cursor: pointer;
   border: 2px solid #e3e3e3;
   height: 130px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .shopBirdImg {
@@ -109,32 +109,32 @@ strong, .bt {
 
 #viewfinderWrap {
   pointer-events: none;
+  margin-bottom: 10px;
 }
 
 .viewfinder {
    position: relative;
-   left: -50%;
+   right: -50%;
    background-image: url("imgs/background.png");
    background-repeat: no-repeat;
    background-size: cover;
    border-radius: 5px;
    height: 60vh;
    width: 60vw;
-   margin-top: 16vh;
+   margin-top: 20%;
    padding: 0;
-   overflow: hidden;
    touch-action: manipulation;
+   margin-top: 20vh;
 }
 
 .outside {
   background-color: #262626;
-  overflow-x: hidden;
   touch-action: manipulation;
 }
 
 .absolutePos {
   position: absolute;
-  left: 50%;
+  right: 50%;
 }
 
 .insideDims {
@@ -224,14 +224,12 @@ strong, .bt {
 
 .cornerSquare {
   position: relative;
-  /* z-index: 10; */
   top: 0px;
   padding: 0;
-  margin: 0;
-  margin-top: -200px;
   width: 56vw;
   height: 56vh;
   margin: auto;
+  overflow-x: hidden;
   /* margin-top: 2vh; */
 
   background:
@@ -299,9 +297,6 @@ strong, .bt {
 
 @media only screen and (max-width: 650px) {
   /* phone */
-  body {
-    width: 100%;
-  }
   #bird {
     left: 20%;
   }
@@ -313,9 +308,6 @@ strong, .bt {
   }
   h3, h4 {
     font-size: 4vw;
-  }
-  .viewfinder {
-    margin-top: 20vh;
   }
   .alert {
     font-size: 12px;
@@ -331,6 +323,10 @@ strong, .bt {
   }
 }
 
+#rareId {
+  padding-bottom: 10px;
+}
+
 #birdPic {
   width: 150px;
   height: auto;
@@ -341,8 +337,7 @@ strong, .bt {
 }
 
 #bottomButtons {
-  margin-top: 10px;
-  padding: 0;
+  padding-top: 10px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -355,8 +350,11 @@ strong, .bt {
   position: fixed;
   top:0%;
   width:100%;
-  opacity: 1;
   z-index: 2;
+
+  opacity: 1;
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
 }
 
 .closebtn {
